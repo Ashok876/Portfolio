@@ -1,0 +1,66 @@
+/* About Section - Full Width */
+.about-section {
+  width: 100vw;  /* Full screen width */
+  min-height: 100vh;  /* Full screen height for better focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Soft beige background */
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+/* Centered Container */
+.about-container {
+  width: 80%;
+  max-width: 1200px; /* Controls max width */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+/* Profile Image */
+.about-image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px rgba(0, 128, 128, 0.5);
+}
+
+/* About Content */
+.about-content {
+  flex: 1;
+  padding-left: 50px;
+}
+
+/* Heading */
+.about-content h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #008080;
+}
+
+/* Paragraph */
+.about-content p {
+  font-size: 25px;
+  line-height: 1.8;
+  color: #444;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+  }
+
+}

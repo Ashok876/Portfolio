@@ -1,0 +1,101 @@
+/* Education Section */
+.education-section {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #288aec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.education-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Education Card */
+.education-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-left: 5px solid #2c3e50;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.year {
+    font-size: 18px;
+    font-weight: bold;
+    color: #09e0e0;
+}
+
+.institution {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.cgpa {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-section h2 {
+        font-size: 30px;
+    }
+
+    .education-card {
+        padding: 15px;
+    }
+
+    .education-header h3 {
+        font-size: 20px;
+    }
+
+    .year {
+        font-size: 16px;
+    }
+
+    .institution, .cgpa {
+        font-size: 14px;
+    }
+}
