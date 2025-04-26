@@ -64,10 +64,47 @@
   }
   
   /* Responsive Design */
-  @media (max-width: 768px) {
-    .projects-container {
-      flex-direction: column;
-      align-items: center;
-    }
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .project-card {
+    width: 90%; /* Instead of fixed 500px */
+    max-width: 400px; /* Optional: limit max width on tablets */
+    margin-bottom: 20px; /* Space between project cards */
+  }
+
+  .project-card h3 {
+    font-size: 28px; /* Smaller heading */
+  }
+
+  .project-card p {
+    font-size: 18px; /* Smaller description text */
+  }
+
+  .view-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 95%; /* Even more compact on very small phones */
+  }
+
+  .project-card h3 {
+    font-size: 24px;
+  }
+
+  .project-card p {
+    font-size: 16px;
+  }
+
+  .view-button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}

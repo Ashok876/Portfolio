@@ -64,43 +64,45 @@
   background: #1a252f;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .skills-section h2 {
-      font-size: 50px;
-  }
-}
-
 @media (max-width: 768px) {
   .skills-section {
-      padding: 60px 15px;
+    padding: 60px 15px;
   }
 
   .skills-section h2 {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   .skill-category h3 {
-      font-size: 24px;
+    font-size: 24px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Slightly smaller cards */
   }
 
   .skill-card {
-      font-size: 16px;
-      padding: 10px 16px;
+    font-size: 16px;
+    padding: 10px 16px;
   }
 }
 
 @media (max-width: 480px) {
   .skills-section h2 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .skill-category h3 {
-      font-size: 20px;
+    font-size: 20px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* Force 2 columns on very small screens */
+    gap: 10px;
   }
 
   .skill-card {
-      font-size: 14px;
-      padding: 8px 14px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }

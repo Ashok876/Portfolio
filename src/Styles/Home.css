@@ -39,4 +39,37 @@
   .btn:hover {
     background-color: #e6b800;
   }
-  
+
+/* ---------- Mobile Responsive Fix ---------- */
+@media (max-width: 768px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent side scroll */
+  }
+
+  .home-section {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-container {
+    width: 90%; /* Slight padding */
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

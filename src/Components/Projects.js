@@ -13,7 +13,7 @@ const Projects = () => {
       title: "Portfolio",
       description:
         "Personal portfolio built with React.js to showcase my work and skills.",
-      link: "https://github.com/Ashok876/Portfolio.git", // Update this
+      link: "https://ashok876.github.io/Portfolio/", // Update this
     },
   ];
 
